@@ -1,0 +1,24 @@
+secret_number = 77
+
+print(
+"""
++================================+
+| Welcome to my game, muggle!    |
+| Enter an integer number        |
+| and guess what number I've     |
+| picked for you.                |
+| So, what is the secret number? |
+|                                |
+| TIP! It is one between 1 - 100 |
++================================+
+""")
+number=int(input("Enter an integer number: "))
+while number:
+    if number != secret_number:
+        print("Ha ha! You're stuck in my loop!")
+        number=int(input("Enter an integer number: "))
+
+    elif number == secret_number:
+        end_text=input("Well done, muggle! You are free now.")
+
+
